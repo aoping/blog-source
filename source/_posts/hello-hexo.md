@@ -11,6 +11,7 @@ hexo new [layout] <title>
 hexo generate hexo g
 hexo publish [layout] <filename>
 hexo server
+hexo s --debug 
 hexo deploy hexo d
 ```
 
