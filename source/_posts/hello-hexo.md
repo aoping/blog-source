@@ -16,3 +16,9 @@ hexo s --debug
 hexo deploy hexo d
 ```
 
+# 技巧
+- 折叠
+
+```
+<!-- more -->
+```
