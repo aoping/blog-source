@@ -5,6 +5,9 @@ tags:
 ---
 # 本节主要记录html5的相关知识
 
+<!--more-->
+
+
 ## 推出的理由
 - web浏览器之间兼容性很低
 - 文档结构不够明确
@@ -60,6 +63,14 @@ section article aside header hgroup footer nav figure
     hgroup包裹h1-h6,表示子标题
 - address
 
+
+#### 表单新增元素
+
+
+
+#### 
+
+
 ### 网页编排规则
 - 显示编排内容区域块
 - 显示编排内容区域块
@@ -98,6 +109,8 @@ spellcheck 对input textarea检查
 tabindex 设置为-1（可以通过js获取到）
 
 
+
+# 新增api
 
 
 
