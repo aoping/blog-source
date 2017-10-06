@@ -12,3 +12,4 @@ http://blog.csdn.net/tao_627/article/details/52635691
 
 
 
+安装mongodb   http://www.cnblogs.com/weschen/p/7395667.html
