@@ -1,7 +1,7 @@
 ---
 title: hello-hexo
 date: 2017-09-30 13:06:10
-tags:
+tags: hexo
 ---
 
 # 命令

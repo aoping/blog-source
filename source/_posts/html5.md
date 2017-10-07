@@ -1,7 +1,7 @@
 ---
 title: html5
 date: 2017-10-03 08:54:20
-tags:
+tags: html html5
 ---
 # 本节主要记录html5的相关知识
 
