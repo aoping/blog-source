@@ -7,3 +7,6 @@ tags: hexo tution
 # 搭建博客
 
 
+官网地址
+https://hexo.io/zh-cn/docs/index.html
+
