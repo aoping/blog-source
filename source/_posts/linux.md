@@ -2,6 +2,7 @@
 title: linux
 date: 2017-10-06 18:02:45
 tags: linux ubuntu
+categories: linux
 ---
 
 

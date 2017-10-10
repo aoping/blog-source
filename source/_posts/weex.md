@@ -1,7 +1,8 @@
 ---
 title: weex
 date: 2017-10-08 11:35:28
-tags:
+tags: weex
+categories: weex
 ---
 
 ## ui

@@ -83,6 +83,24 @@ C:\Users\你的用户名\AppData\Roaming\npm
 G:\software\npm-global 
 ```
 
+### 安装cnpm
+
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=http://r.cnpmjs.org
+```
+
+### 全局安装模块
+
+```
+npm install hexo-cli -g
+```
+
+### 其他
+
+任何全局npm模块在您已安装的各种版本的node.js之间不共享
+
+
 
 # linux(ubuntu)
 
