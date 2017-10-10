@@ -83,8 +83,22 @@ C:\Users\你的用户名\AppData\Roaming\npm
 G:\software\npm-global 
 ```
 
+### 安装nrm
+nrm（npm registry manager ）npm的镜像源管理工具   https://github.com/Pana/nrm
+- 安装
+```
+npm install -g nrm
+```
+- 其他命令
+```
+nrm ls    展示所有可切换的镜像地址
+nrm use cnpm    切换到cnpm
+```
+
+
 ### 安装cnpm
 
+如果你安装了nrm，可以忽略
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 npm install -g cnpm --registry=http://r.cnpmjs.org
