@@ -29,11 +29,18 @@ Post.add({
 });
 ```
 
-- 虚拟域
+- 虚拟域(该属性不写入数据库,用于计算属性)
 ```
 User.schema.virtual('canAccessKeystone').get(function () {
 	return this.isAdmin;
 });
+
+
+ PersonSchema.virtual('name.full').set(function(name){
+      var split = name.split(' ');
+      this.name.first = split[0];
+      this.name.last = split[1];
+    });
 ```
 - 方法
 ```
