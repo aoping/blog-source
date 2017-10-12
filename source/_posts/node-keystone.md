@@ -1,7 +1,8 @@
 ---
 title: keystone学习
 date: 2017-10-10 17:20:04
-tags:
+tags: keystone
+categories: keystone
 ---
 
 
