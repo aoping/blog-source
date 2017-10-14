@@ -25,6 +25,13 @@ http://blog.csdn.net/zhuyucheng123/article/details/51147550
 安装mongodb
 http://blog.csdn.net/flyfish111222/article/details/51886787
 http://www.cnblogs.com/weschen/p/7395667.html
+```
+sudo apt-get install mongodb // 安装mongodb
+service mongodb start
+service mongodb stop
+```
+
+
 
 安装robomongo
 http://blog.csdn.net/cristal_tina/article/details/53634209
