@@ -1,8 +1,8 @@
 ---
 title: ubuntu常用软件安装
 date: 2017-10-06 18:02:45
-tags: linux ubuntu
-categories: linux
+tags: ubuntu 软件安装
+categories: ubuntu
 ---
 
 
