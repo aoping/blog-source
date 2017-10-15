@@ -17,10 +17,15 @@ http://blog.csdn.net/ch593030323/article/details/53571807
 
 <!--more-->
 
+安装qq(2017版)
+http://blog.csdn.net/xs18952904/article/details/74931089?locationNum=2&fps=1
+http://blog.csdn.net/ysy950803/article/details/52958538
+
 
 安装迅雷
 http://blog.csdn.net/zhuyucheng123/article/details/51147550
 
+登录激活就可以使用了
 
 安装mongodb
 http://blog.csdn.net/flyfish111222/article/details/51886787
