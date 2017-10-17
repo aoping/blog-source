@@ -11,3 +11,5 @@ categories: hexo
 官网地址
 https://hexo.io/zh-cn/docs/index.html
 
+## 图片
+hexo博客图片问题  http://www.jianshu.com/p/c2ba9533088a
