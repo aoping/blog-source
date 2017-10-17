@@ -18,8 +18,13 @@ hexo deploy hexo d
 ```
 
 # 技巧
-- 折叠
+## 折叠
 
 ```
 <!-- more -->
 ```
+## 引用自己的文章
+```
+{% post_link markdown-learning-by-maxiang 点击这里查看这篇文章 %}
+```
+- markdown-learning-by-maxiang是你的文章名称
