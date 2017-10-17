@@ -16,7 +16,7 @@ https://github.com/hakobera/nvmw
 
 
 ## nvm-windows(推荐)
-
+参考链接：https://littlebaozi.github.io/2017/08/30/nvm-nodejs/
 github地址：https://github.com/coreybutler/nvm-windows
 
 ### 安装nvm-windows
