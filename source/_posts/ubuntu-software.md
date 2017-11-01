@@ -42,7 +42,8 @@ systemctl status mongod
 
 ```
 
-
+- MongoError: Authentication failed.
+http://cnodejs.org/topic/5617d80941ceb58c4f8e6e37
 
 
 
