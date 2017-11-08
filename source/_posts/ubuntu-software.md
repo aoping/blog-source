@@ -29,12 +29,21 @@ http://blog.csdn.net/zhuyucheng123/article/details/51147550
 
 安装mongodb
 http://blog.csdn.net/flyfish111222/article/details/51886787
-http://www.cnblogs.com/weschen/p/7395667.html
+http://www.cnblogs.com/weschen/p/7395667.html（选择此方法）
 ```
 sudo apt-get install mongodb // 安装mongodb
 service mongodb start
 service mongodb stop
 ```
+```
+sudo systemctl enable mongod    //设置开机启动mongodb服务
+sudo service mongod start   //启动服务
+systemctl status mongod
+
+```
+
+- MongoError: Authentication failed.
+http://cnodejs.org/topic/5617d80941ceb58c4f8e6e37
 
 
 

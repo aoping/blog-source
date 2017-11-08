@@ -37,10 +37,36 @@ set DEBUG=myapp & npm start // windows
 ## express架构
 
 ```
+app ->  router  ->  controller  -> model   -> mongoose
+                                -> view    -> pug/html
+```
+
+```
 var express = require('express')
 var app = express()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+```
+
+
+```javascript
+var session = require('express-session');
+var RedisStore = require('connect-redis')(session);
+app.use(require('cookie-parser')(config.session_secret));
+app.use(session({
+  secret: config.session_secret,
+  store: new RedisStore({
+    port: config.redis_port,
+    host: config.redis_host,
+    db: config.redis_db,
+    pass: config.redis_password,
+  }),
+  resave: false,
+  saveUninitialized: false,
+}));
+
+
+
 ```
