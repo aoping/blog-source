@@ -24,3 +24,15 @@ sudo apt-get install terminator
 
 **显示隐藏文件**
 - ctrl+h
+
+
+
+## 命令
+**创建用户**
+```
+useradd zoro -m -s /bin/bash
+passwd zoro
+su zoro
+```
+
+

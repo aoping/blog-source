@@ -16,7 +16,7 @@ categories: 学习笔记
 - 文件上传  connect-busboy
 - 错误处理  errorhandler
 - 跨域    cors
-- 事件驱动  eventproxy
+- 处理回调  eventproxy async promise bluebird
 
 
 
@@ -25,6 +25,10 @@ categories: 学习笔记
 - 容量转换  bytes
 - 日期转换  monents
 - xml   xmlbuilder
+- 表单验证  validator
+- 加密    bcryptjs utility
+- node-uuid
+
 
 
 
