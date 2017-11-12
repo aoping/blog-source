@@ -17,9 +17,15 @@ categories: 学习笔记
 - 错误处理  errorhandler
 - 跨域    cors
 - 处理回调  eventproxy async promise bluebird
+- 事件驱动  eventproxy
+- 请求  request
 
 
 
+## 流处理
+
+through2
+concat-stream
 
 ## 常用工具类
 - 容量转换  bytes
