@@ -33,6 +33,8 @@ sudo apt-get install terminator
 useradd zoro -m -s /bin/bash
 passwd zoro
 su zoro
+gpasswd -a zoro sudo //sudo分组
+
 ```
 
 
