@@ -89,3 +89,25 @@ sudo mkfontdir
 sudo fc-cache
 
 4. 重启wps即可，字体缺失的提示不再出现。
+
+
+## 安装zsh
+
+```
+0.查看shells
+cat /etc/shells
+1.
+sudo yum install zsh
+或者
+sudo apt-get install zsh
+2.
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+3.切换成zsh
+chsh -s /bin/zsh
+```
+
+
+## 服务器软件
+```
+sudo apt-get install vim openssl build-essential libssl-dev wget curl git 
+```
