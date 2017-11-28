@@ -51,8 +51,8 @@ categories: software
 3. vscode √
 4. cmder √
 5. git bash √
-6. mongodb
-7. Robomongo 0.9.0-RC9
+6. mongodb √
+7. Robomongo 0.9.0-RC9 √
 8. virtual box
 9. webstorm
 10. RedisDesktopManager
