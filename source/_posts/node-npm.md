@@ -44,3 +44,9 @@ concat-stream
 - RedisStore    connect-redis
 - redis client  ioredis
 
+## 安装失败
+
+### 安装node-sass失败
+```
+用cnpm install重装
+```
