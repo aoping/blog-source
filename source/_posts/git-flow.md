@@ -5,8 +5,14 @@ tags:
 categories:
 ---
 
+## 教程
+http://www.yiibai.com/git/
 
 ## git命令
+
+### git pull <远程主机名> <远程分支名>:<本地分支名>
+
+
 
 ### git push 远程仓库别名 推送分支
 推送本地分支到远程仓库，这2个参数缺省分别就是 origin 、 当前分支（一般为master）
@@ -40,6 +46,7 @@ git diff生成patch文件
 或者pull request生成的patch文件（在连接上加上.patch即可知道链接）
 vscode安装git patch插件可以生成文件
 
+参考：http://www.ruanyifeng.com/blog/2017/07/pull_request.html
 
 
 

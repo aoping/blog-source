@@ -101,6 +101,9 @@ git patch 打包差量包
 #### Settings Sync	VSCode设置同步到Gist
   步骤：http://shanalikhan.github.io/2015/12/15/Visual-Studio-Code-Sync-Settings.html
 
+#### git patch
+- ctrl+p
+- >git
 
 
 
