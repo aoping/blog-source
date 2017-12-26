@@ -52,3 +52,5 @@ vscode安装git patch插件可以生成文件
 
 
 ## git流程
+参考：
+https://github.com/oldratlee/translations/tree/master/git-workflows-and-tutorials
