@@ -10,6 +10,7 @@ categories:　software
 
 
 ## 插件
+### 总览
 Auto Close Tag	自动闭合HTML标签
 Auto Import Typescript	自动import提示
 Auto Rename Tag	修改HTML标签时，自动修改匹配的标签
@@ -90,6 +91,13 @@ vscode-icons	文件图标，方便定位文件
 vscode-random	随机字符串生成器
 vscode-styled-components	styled-components高亮支持
 vscode-styled-jsx	styled-jsx高亮支持
+
+### 详解
+#### Settings Sync	VSCode设置同步到Gist
+  步骤：http://shanalikhan.github.io/2015/12/15/Visual-Studio-Code-Sync-Settings.html
+
+
+
 
 ## 快捷键
 
