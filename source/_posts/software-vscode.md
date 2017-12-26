@@ -102,8 +102,10 @@ git patch 打包差量包
   步骤：http://shanalikhan.github.io/2015/12/15/Visual-Studio-Code-Sync-Settings.html
 
 #### git patch
+- 把patch文件放入项目根目录
 - ctrl+p
 - >git
+- 选择patch文件
 
 
 
