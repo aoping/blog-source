@@ -16,9 +16,13 @@ categories: 学习笔记
 ### ppt
 http://www.slideshare.net/(需翻墙)
 
+## 时间管理
 
-### RescueTime
+## RescueTime
 一款著名的跨平台行为追踪时间记录服务
 https://www.rescuetime.com
 
+
+## 软件管理
+### chocolate(windows下的软件管理)
 
