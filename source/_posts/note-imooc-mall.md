@@ -160,6 +160,29 @@ $ webpack -p    //压缩混淆脚本，这个非常非常重要！
 $ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了
 ```
 
+#### 几点疑问
+##### html-webpack-plugin
+参考 https://segmentfault.com/a/1190000007294861
+https://www.cnblogs.com/wonyun/p/6030090.html
+- html-webpack-plugin引入js css的顺序有什么规则？
+
+- html-webpack-plugin怎么只引入相关的js
+  有个chunks字段，在里面引入相关chunk即可
+  ```js
+  var HtmlWebpackPlugin = require('html-webpack-plugin')
+   new HtmlWebpackPlugin({
+      title       : '首页',
+      inject: true,
+      hash: true,
+      chunks      : ['common', 'index']
+    })
+  ```
+- hash为true改一个文件就所有的hash都会改变？
+  该 hash 值是该次 webpack 编译的 hash 值
+- 
+
+
+
 ### git
 #### 命令及简写
 
@@ -179,3 +202,10 @@ $ webpack -d    //生成map映射文件，告知哪些模块被最终打包到�
   可以用charles重定向
 
 
+### 疑问
+- 怎么利用缓存以及缓存带来的危害？
+  利用hash，是文件的hash还是``` ?hash ```
+  有三种hash (hash chunkhash ?hash)
+  chunkhash
+
+- 
