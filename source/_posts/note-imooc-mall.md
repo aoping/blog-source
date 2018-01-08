@@ -110,7 +110,24 @@ new ExtractTextPlugin("[name].css"), // name是entry名
 ```
 
 
+- copy-webpack-plugin
+```js
+var Copy = require('copy-webpack-plugin')
+//  文件拷贝插件,将图片和字体拷贝到dist目录
+var copyPlugin = new Copy([
+  { from: './src/assets/images', to: './images' },
+  { from: './src/assets/font', to: './font' }
+])
+```
 
+
+- BannerPlugin
+```js
+var bannerPlugin = new webpack.BannerPlugin({
+  banner: '// { "framework": "Vue" }\n',
+  raw: true
+})
+```
 
 
 - HtmlWebpackPlugin
