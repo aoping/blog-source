@@ -62,6 +62,10 @@ CommonsChunkPlugins
       })
     ]
   ```
+疑问：
+  抽取css模块？？？
+
+
 
 - loader
 css-loader style-loader babel-loader
@@ -70,7 +74,7 @@ css-loader style-loader babel-loader
 ExtractTextPlugins
 ```js
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
+// webpack1
 module.exports = {
   module: {
     rules: [
@@ -88,7 +92,25 @@ module.exports = {
   ]
 }
 
+// webpack2
+module: {
+  rules: [
+    {
+      test: /\.css$/,
+      use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader",
+          publicPath: "/dist"
+      })
+    }
+  ]
+},
+
+new ExtractTextPlugin("[name].css"), // name是entry名
 ```
+
+
+
 
 
 - HtmlWebpackPlugin
@@ -181,6 +203,9 @@ https://www.cnblogs.com/wonyun/p/6030090.html
   该 hash 值是该次 webpack 编译的 hash 值
 - 
 
+#### webpack进阶教程（二）——webpack引入jquery多种方法探究
+https://segmentfault.com/a/1190000007249293
+
 
 
 ### git
@@ -208,4 +233,66 @@ https://www.cnblogs.com/wonyun/p/6030090.html
   有三种hash (hash chunkhash ?hash)
   chunkhash
 
-- 
+
+
+### 常用配置
+```js
+// webpack.config.js
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+var ExtractTextPlugin   = require('extract-text-webpack-plugin')
+var ignorePlugin = new webpack.IgnorePlugin(/jquery.min.js/);
+
+// 获取html-webpack-plugin参数的方法 
+var getHtmlConfig = function(name, title){
+  return {
+      template    : './view/' + name + '.html',
+      filename    : 'view/' + name + '.html',
+      title       : title,
+      inject      : true,
+      hash        : true,
+      chunks      : ['common', name]
+  };
+};
+
+module.exports = {
+  entry: {
+    'list': path.resolve(__dirname, './app/list.js'),
+    'index': path.resolve(__dirname, './app/index.js'),
+  },
+  output: {
+    filename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname, './dist')
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: "css-loader",
+            publicPath: "/dist"
+        })
+      }
+    ]
+  },
+  // externals : {
+  //   'jquery' : 'window.jQuery'
+  // },
+  plugins: [
+    // 独立通用模块到js/base.js
+    new webpack.optimize.CommonsChunkPlugin({
+        name : 'common',
+        filename : 'js/base.js'
+    }),
+    // 把css单独打包到文件里
+    new ExtractTextPlugin("[name].[chunkhash].css"),
+    // new ExtractTextPlugin("common.css"),
+    
+    new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
+    new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表页')),
+    ignorePlugin
+  ]
+}
+```
