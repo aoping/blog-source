@@ -145,6 +145,14 @@ var webpackConfig = {
   plugins: [new HtmlWebpackPlugin()]
 };
 ```
+把js以inline的形式引入
+```html
+  <!-- index.html -->
+  <% compilation.assets[htmlWebpackPlugin.files.]%>
+
+  <script></script>
+```
+
 
 - 图片 字体
 url-loader   file-loader
