@@ -70,6 +70,26 @@ CommonsChunkPlugins
 - loader
 css-loader style-loader babel-loader
 
+** import进来的css不会经过后面的loader？ **
+
+用less的时候可以不用importLoaders
+
+import进来的css会被单独成一个style标签
+```js
+module: {
+  rules: [
+    {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader?importLoaders=1!postcss-loader'
+    }
+  ]
+},
+postcss: [
+  require('autoprefixer')({
+    browsers: ['last 5 versions']
+  })
+]
+```
 - 提取css
 ExtractTextPlugins
 ```js
