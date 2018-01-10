@@ -68,7 +68,10 @@ CommonsChunkPlugins
 
 
 - loader
-css-loader style-loader babel-loader
+css css-loader style-loader postcss-loader autoprefixer-loader
+js babel-loader
+模板引擎 html-loader ejs-loader
+图片 url-loader file-loader image-webpack-loader(压缩)
 
 ** import进来的css不会经过后面的loader？ **
 
@@ -251,6 +254,10 @@ https://www.cnblogs.com/wonyun/p/6030090.html
 #### webpack进阶教程（二）——webpack引入jquery多种方法探究
 https://segmentfault.com/a/1190000007249293
 
+- html模板引擎中引入图片最好用cdn图片，也可以用require
+```ejs
+${require('../asserts/img/a.png')}
+```
 
 
 ### git
@@ -277,6 +284,14 @@ https://segmentfault.com/a/1190000007249293
   利用hash，是文件的hash还是``` ?hash ```
   有三种hash (hash chunkhash ?hash)
   chunkhash
+
+
+# 开发和生产
+
+## 开发
+
+
+## 生产
 
 
 
