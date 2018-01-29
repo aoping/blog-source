@@ -22,7 +22,7 @@ categories: software
 12. TightVNC
 13. 搜狗输入法 √
 14. gitbook
-
+15. iThoughtsX
 
 ## 开发
 

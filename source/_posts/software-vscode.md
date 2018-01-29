@@ -91,10 +91,13 @@ vscode-icons	文件图标，方便定位文件
 vscode-random	随机字符串生成器
 vscode-styled-components	styled-components高亮支持
 vscode-styled-jsx	styled-jsx高亮支持
-
-
 wakatime  记录编程活动的插件
 git patch 打包差量包
+
+
+#### 新增
+Bracket Pair Colorizer  大括号匹配
+
 
 
 ### 详解
