@@ -34,5 +34,6 @@ this.event.subscribe('chat.received', (msg, time) => {
     })
 ```
 
-
-
+- 向组件传递参数 @input
+- 组件没有生命周期 
+- 扫描二维码要 animate:false
