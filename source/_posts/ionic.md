@@ -24,5 +24,15 @@ categories: 学习笔记
         (focus)="focus()"
         placeholder="输入内容"></ion-textarea>
 ```
+- 发布订阅模式 events  类似vue $emit
+```js
+this.event.publish('chat.received', messageSend, Date.now())
+
+this.event.subscribe('chat.received', (msg, time) => {
+      this.messageList.push(msg);
+      this.scrollToBottom();
+    })
+```
+
 
 
