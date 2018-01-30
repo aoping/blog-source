@@ -54,6 +54,9 @@ http://blog.csdn.net/cristal_tina/article/details/53634209
 安装gitbook
 http://blog.csdn.net/qq_26437925/article/details/52959733?locationNum=8&fps=1
 
+安装webstorm
+http://www.linuxidc.com/Linux/2017-08/146059.htm
+
 
 安装wps
 **下载地址**   
