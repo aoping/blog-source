@@ -55,6 +55,12 @@ new webpack.optimize.CommonsChunkPlugin({
 
 ### require.ensure
 注意不会执行
+```js
+require.ensure(['lodash'], function() {
+  var _ = require('lodash')
+
+},'vendor')
+```
 require.include // 
 
 ### import.then()
@@ -64,5 +70,69 @@ require.include //
 - 分离业务代码、业务公共代码和第三方依赖
 - 分离首次加载和访问后加载代码
 
-### 
+## 处理css
+引入
+css modules
+配置less / sass
+提取css代码
 
+### style-loader 插入style标签
+  options: 
+    insertInto 
+    singleton 
+    transform // 在插入浏览器之前执行，根据浏览器而变化
+- style-loader/url 插入style标签链接
+```
+style-loader/url!file-loader
+```
+- style-loader/useable 样式的引用与否
+```
+import base from './base.css'
+base.use()
+base.unuse()
+```
+
+
+### css-loader import css文件
+options
+  alias
+  modules
+
+#### css modules
+:local
+:global
+composes 
+composes: ... from  // 注意引入顺序，应该写在第一行
+
+### postcss
+```
+npm install postcss postcss-loader autoprefixer cssnano postcss-cssnext --save-dev 
+```
+
+
+## tree shaking
+### js: uglifyjs
+
+本地tree shaking
+第三方库tree shaking
+
+lodash不能通过常规来tree shaking
+可以用babel-plugin-lodash
+
+### css: purifycss
+```
+npm install purifycss-webpack glob-all --save-dev
+```
+
+
+## 文件处理
+file-loader url-loader img-loader postcss-sprits
+### 图片处理
+#### css引入的图片
+
+自动合成雪碧图
+压缩图片
+Base64编码
+
+### 字体处理
+### 第三方库处理
