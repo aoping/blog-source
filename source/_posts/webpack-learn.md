@@ -58,4 +58,11 @@ new webpack.optimize.CommonsChunkPlugin({
 require.include // 
 
 ### import.then()
- 
+
+### 代码分割场景
+- 分离业务代码和第三方依赖
+- 分离业务代码、业务公共代码和第三方依赖
+- 分离首次加载和访问后加载代码
+
+### 
+

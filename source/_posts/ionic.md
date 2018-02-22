@@ -37,3 +37,25 @@ this.event.subscribe('chat.received', (msg, time) => {
 - 向组件传递参数 @input
 - 组件没有生命周期 
 - 扫描二维码要 animate:false
+
+
+- 数据快照 和数据订阅
+```
+snapshot  subscribe
+```
+
+- 脚手架
+```
+npm install -g @angular/cli
+ng new program --routing
+```
+
+## 路由
+### 路由参数传递
+三种方式
+### 路由重定向
+
+
+## 
+
+
