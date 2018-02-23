@@ -168,8 +168,31 @@ new webpack.providePlugin({
 
 ``
 
+### html-webpack-plugin
+处理html中的图片
+1.用html-loader来
+```js
+{
+  test: /\.html$/,
+  use: [
+    {
+      loader: 'html-loader',
+      options: {
+        attrs: ['img:src','img:data-src']
+      }
+    }
+  ]
+}
+```
 
+2.在HTML中用require引入图片
+```
+<img :src="$require('')">
+```
 
+## html配合优化
+html-webpack-inline-chunk-plugin 把js直接插入HTML
+inline-mainfest-webpack-plugin 把js直接插入HTML,有bug
 
 
 

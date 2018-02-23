@@ -24,7 +24,7 @@ gulp-clean gulp-concact gulp-connect gulp-load-plugins open
 
 ### 依赖
 
-#### css
 - less
 - angular
+- ui-router
 - 
