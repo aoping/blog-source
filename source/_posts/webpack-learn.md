@@ -126,13 +126,50 @@ npm install purifycss-webpack glob-all --save-dev
 
 
 ## 文件处理
-file-loader url-loader img-loader postcss-sprits
+file-loader url-loader img-loader postcss-sprites
 ### 图片处理
 #### css引入的图片
 
 自动合成雪碧图
+postcss-sprites
+spritePath
+retina: true
 压缩图片
 Base64编码
 
 ### 字体处理
 ### 第三方库处理
+
+webpack.providePlugin
+imports-loader
+window
+
+##### jquery
+1.引入CDN地址，可以直接使用
+2. webpack.providePlugin
+```
+new webpack.providePlugin({
+  $: 'jquery'
+})
+```
+3. 来自自己的一个目录中
+配合resolve使用
+
+4. imports-loader
+```
+
+  test: path.resolve(__dirname,'app.js'),
+  use: [{
+    loader: 'imports-loader',
+    options: {
+      $: 'jquery'
+    }
+  }]
+
+``
+
+
+
+
+
+
