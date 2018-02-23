@@ -196,3 +196,52 @@ inline-mainfest-webpack-plugin 把js直接插入HTML,有bug
 
 
 
+## 搭建开发环境
+### webpack watch mode
+
+
+
+### webpack-dev-serve
+live reloading
+打包文件？No
+搭建本地服务
+路径重定向
+支持https
+浏览器中显示编译错误
+接口代理
+模块热更新（HRM）
+devServer
+  inline
+  contentBase
+  port
+  historyApiFallback API重定向
+  https
+  proxy 远程代理
+  hot 模块热更新
+  openpage 
+  lazy 启动时不打包编译，只初始化打开的页面
+  overlay 遮罩编译错误提示
+
+#### HRM
+webpack.HotModuleReplacePlugin()
+webpack.NamedModulesPlugin()
+module.hot // 
+module.hot.accept // 接口
+module.hot.decline // 接口
+style-loader， vue-loader等会自己处理HRM，原生js需要自己写HRM
+
+
+
+
+### express + webpack
+
+
+## devtool
+开发环境 devtool: 'cheap-module-eval-source-map'
+生产环境 devtool: '#source-map'
+
+css-loader的signalnon为true时sourceMap没用
+
+
+## eslint
+
