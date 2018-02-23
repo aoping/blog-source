@@ -245,3 +245,41 @@ css-loader的signalnon为true时sourceMap没用
 
 ## eslint
 
+
+## 开发与生产环境
+### 开发环境
+模块热更新
+sourceMap
+接口代理
+代码规范检查
+
+
+### 生产环境
+提取公用代码
+压缩混淆
+文件压缩或Base64编码
+去除无用代码
+
+### 共同点
+同样的入口
+同样的代码处理
+同样的解析配置
+
+webpack-merge拼接不同环境
+
+
+## webpack分析
+1.官网
+http://webpack.github.io/analyse/
+```js
+ webpack --profile -- json > stats.json
+```
+2.插件
+```
+npm i webpack-bundle-analyzer --save-dev
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+new BundleAnalyzerPlugin(), // webpack分析
+
+```
+
+
