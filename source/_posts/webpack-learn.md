@@ -169,6 +169,11 @@ new webpack.providePlugin({
 ``
 
 ### html-webpack-plugin
+用定义的参数
+```
+<%=htmlWebpackPlugin.options.title%>
+```
+
 处理html中的图片
 1.用html-loader来
 ```js
@@ -280,6 +285,89 @@ npm i webpack-bundle-analyzer --save-dev
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 new BundleAnalyzerPlugin(), // webpack分析
 
+```
+
+
+##　打包速度
+文件多？
+页面多？
+依赖多？
+
+办法一　分开vendor和app
+DllPlugin DllReferencePlugin
+
+办法二　UglifyJsPlugin并行处理　parallel cache
+
+办法三　HappyPack并行，给loader用的
+
+办法四　babel-loader  cacheDirected include exclude
+
+其他　减少resolve  去除sourcemap cache-loader
+
+
+## 长缓存
+要抽出manifest(webpack runtime)
+
+改变业务代码,不能改变vendor--用chunkhash
+
+模块顺序变化，引入新模块，vendor变化--用NamedChunksPlugin NamedModulesPlugin
+
+动态引入模块，vendor变化--定义chunkname
+
+## 多页面应用
+### 特点
+多入口entry
+
+多页面html
+
+每个页面不同的chunk
+
+每个页面不同的参数
+
+### 实现
+两种方式
+#### 多配置
+webpack
+parallel-webpack
+
+优点：可以使用parallel-webpack提高打包速度，配置灵活
+缺点：不能多页面间共享代码
+
+
+####　单配置
+优点：多页面间共享代码
+缺点：打包慢，　输出内容比较复杂
+
+
+
+```
+// webpack.web.dll.js
+
+var path = require('path') 
+var webpack = require('webpack') 
+ 
+module.exports = { 
+  entry: { 
+    'vue': ['vue', 'vue-router', 'vuex'] 
+  }, 
+  output: { 
+    path: path.join(__dirname, './src/dll/'), 
+    filename: '[name].dll.js', 
+    library: '[name]' 
+  }, 
+  plugins: [ 
+    new webpack.DllPlugin({ 
+      path: path.join(__dirname, './src/dll/', '[name]-manifest.json'), 
+      name: '[name]' 
+    }), 
+    new webpack.optimize.UglifyJsPlugin() 
+  ] 
+} 
+
+// 
+// new webpack.DllReferencePlugin({ 
+    //   manifest: require('./src/dll/vue-manifest.json') 
+    // }), 
 ```
 
 
