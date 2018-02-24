@@ -370,4 +370,17 @@ module.exports = {
     // }), 
 ```
 
-
+## webpack打包图片
+image src和background里的图片可以直接打包
+js中的图片要通过require引入
+HTML中的图片要html-withimg-loader
+```
+module: {
+　　loaders: [
+　　　　{
+　　　　　　test: /\.html$/,
+　　　　　　loader: 'html-withimg-loader'
+　　　　}
+　　]
+}
+```
