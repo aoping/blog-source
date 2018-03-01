@@ -116,4 +116,6 @@ Bracket Pair Colorizer  大括号匹配
 ## 快捷键
 
 
-## 
+### 安装code命令
+打开命令面板　输入code选择安装
+
