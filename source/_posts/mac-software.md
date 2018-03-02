@@ -71,3 +71,14 @@ categories: software
 20. IntelliJ IDEA 2017.1.2
 21. 
 
+### 问题
+
+#### CocoaPods not working in macOS High Sierra
+- sudo gem update --system
+sudo gem install -n /usr/local/bin cocoapods
+
+pod install
+
+
+
+
