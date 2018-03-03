@@ -5,17 +5,78 @@ tags: ubuntu 软件安装
 categories: ubuntu
 ---
 
+# 装机软件
+
+## 常用
+1. 谷歌浏览器 √
+4. qq 微信 √
+9. 迅雷 √
+11. wps √
+13. 搜狗输入法 √
+
+## 开发
+
+### 开发环境 
+2. git √
+1. nvm √ 一定要比node先安装
+1. nrm √
+2. node npm yarn √
+3. arc
+4. java √
+5. python 2.7.13 √
+6. ruby √
+7. php -> vs studio 2017 要修改php.ini 参考 http://blog.csdn.net/rilyu/article/details/37379873 √ 
+
+#### 脚手架
+1. hexo-cli √
+2. weex-toolkit √
+3. 
+
+
+
+
+
+### 开发软件
+
+1. gitkraken √
+2. sourcetree √
+3. vscode √
+4. cmder √
+5. git bash √
+6. mongodb √
+7. Robomongo 0.9.0-RC9 √
+8. virtual box
+9. webstorm
+10. RedisDesktopManager
+11. android studio
+12. Charles
+13. Genymotion
+14. mysql-workbench
+15. sublimeText √
+16. notepad++ √
+17. TortoiseSVN
+18. atom
+19. mysql
+20. IntelliJ IDEA 2017.1.2
+21. 
 
 
 http://blog.csdn.net/shidaping/article/details/52218278
 http://blog.csdn.net/tao_627/article/details/52635691
 
-
+安装谷歌浏览器
+https://jingyan.baidu.com/article/335530da98061b19cb41c31d.html
 
 安装微信
 http://blog.csdn.net/ch593030323/article/details/53571807
 
 <!--more-->
+### 安装增强功能
+http://blog.csdn.net/golden1314521/article/details/45500843
+
+安装搜狗输入法
+
+
 
 安装qq(2017版)
 http://blog.csdn.net/xs18952904/article/details/74931089?locationNum=2&fps=1
