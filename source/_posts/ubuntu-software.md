@@ -9,17 +9,18 @@ categories: ubuntu
 
 ## 常用
 1. 谷歌浏览器 √
+13. 搜狗输入法 √
 4. qq 微信 √
 9. 迅雷 √
 11. wps √
-13. 搜狗输入法 √
 
 ## 开发
 
 ### 开发环境 
-2. git √
-1. nvm √ 一定要比node先安装
-1. nrm √
+2. git √  sudo apt-get install git
+1. vim √ 
+1. nvm √ 一定要比node先安装  http://blog.csdn.net/minchina91/article/details/40260263
+1. nrm √ cnpm
 2. node npm yarn √
 3. arc
 4. java √
@@ -41,7 +42,6 @@ categories: ubuntu
 1. gitkraken √
 2. sourcetree √
 3. vscode √
-4. cmder √
 5. git bash √
 6. mongodb √
 7. Robomongo 0.9.0-RC9 √
@@ -75,6 +75,7 @@ http://blog.csdn.net/ch593030323/article/details/53571807
 http://blog.csdn.net/golden1314521/article/details/45500843
 
 安装搜狗输入法
+http://blog.csdn.net/ljheee/article/details/52966456
 
 
 
