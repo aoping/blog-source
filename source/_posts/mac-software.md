@@ -80,5 +80,8 @@ sudo gem install -n /usr/local/bin cocoapods
 pod install
 
 
+#### pod install 安装失败
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
 
+https://www.jianshu.com/p/07a281ff57d3
 
