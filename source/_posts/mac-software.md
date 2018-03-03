@@ -23,6 +23,10 @@ categories: software
 13. 搜狗输入法 √
 14. gitbook
 15. iThoughtsX
+- BetterZip
+- AppZapper
+- 
+
 
 ## 开发
 
@@ -92,3 +96,6 @@ xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer dire
 
 https://www.jianshu.com/p/07a281ff57d3
 
+#### 把PHP设为全局path
+php: command not found 命令找不到
+export PATH=$PATH:/usr/local/PHP/bin
