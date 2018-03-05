@@ -75,11 +75,18 @@ categories: software
 20. IntelliJ IDEA 2017.1.2
 21. 
 
+### mac使用
+文本编辑快捷键 http://www.cnblogs.com/wangfenjin/archive/2012/09/06/2672871.html
+
+
+
+
 ### 安装教程
 #### arcanist
 https://secure.phabricator.com/book/phabricator/article/arcanist/#installing-arcanist
 
-
+#### 安装ssh
+https://help.github.com/articles/connecting-to-github-with-ssh/
 
 
 ### 问题

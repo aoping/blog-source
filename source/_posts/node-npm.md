@@ -5,6 +5,10 @@ tags: node npm
 categories: 学习笔记
 ---
 
+## 常见命令
+查看历史版本  npm view weex-toolkit versions
+
+
 ## 常用依赖
 - 把变量加载入process.env dotenv
 - 控制台颜色     colors  chalks
