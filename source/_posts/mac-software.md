@@ -25,7 +25,7 @@ categories: software
 15. iThoughtsX
 - BetterZip
 - AppZapper
-- 
+- shotcat  键盘操作
 
 
 ## 开发
@@ -78,6 +78,14 @@ categories: software
 ### mac使用
 文本编辑快捷键 http://www.cnblogs.com/wangfenjin/archive/2012/09/06/2672871.html
 
+键盘快捷键
+Mission Control          Ctrl ＋ 上
+应用程序窗口              Ctrl ＋ 下
+切换工作空间             Ctrl ＋ 左/右
+显示桌面                     F11
+显示DashBoard          F12
+切换窗口    command ＋ tab
+最小化窗口有快捷键（Cmd+M）
 
 
 
