@@ -26,6 +26,7 @@ categories: software
 - BetterZip
 - AppZapper
 - shotcat  键盘操作
+- elmedia 倍速播放器
 
 
 ## 开发
