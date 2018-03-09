@@ -33,6 +33,8 @@ categories: software
 
 ### 开发环境 
 1. homebrew http://brew.sh/ √
+1. iTerm2
+1. Zsh
 2. git √
 1. nvm √ 一定要比node先安装
 1. nrm √
