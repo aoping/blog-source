@@ -30,6 +30,7 @@ categories: software
 * shotcat 键盘操作
 * elmedia 倍速播放器
 * paragon ntfs for mac 移动硬盘识别软件
+* 全能解压
 
 ## 开发
 
