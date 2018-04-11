@@ -277,6 +277,22 @@ backdrop: blur(20px);
         transform: translatey;
 ```
 
+### 动画
+
+#### css 动画
+
+#### js 钩子
+
+create-keyframe-animation
+
+### audio 播放
+
+#### api
+
+```
+play
+```
+
 ## 工具
 
 #### url 拼接
