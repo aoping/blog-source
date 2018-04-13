@@ -277,6 +277,16 @@ backdrop: blur(20px);
         transform: translatey;
 ```
 
+### keep-alive
+
+有两个钩子 activated 和 deactivated
+
+### mixin 的正确用法
+
+分全局和局部
+
+正确用法应该是 mixin 提供接口， 页面具体实现
+
 ### 动画
 
 #### css 动画
