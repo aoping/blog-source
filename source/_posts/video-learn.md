@@ -293,6 +293,10 @@ create-keyframe-animation
 play
 ```
 
+#### 实现歌词同步
+
+要同时播放同时暂停
+
 ## 工具
 
 #### url 拼接
@@ -342,3 +346,16 @@ export function prefixStyle(style) {
   return vendor + style.charAt(0).toUpperCase() + style.substr(1);
 }
 ```
+
+#### 打乱数组
+
+```
+shuffle
+```
+
+### 动画技巧
+
+#### 左右滑动
+
+* 大于 10%的距离时切换状态
+* 一个渐隐一个 transform
