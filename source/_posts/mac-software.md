@@ -48,6 +48,7 @@ categories: software
 1.  python 2.7.13 √
 1.  ruby √
 1.  php -> vs studio 2017 要修改 php.ini 参考 http://blog.csdn.net/rilyu/article/details/37379873 √
+1. switchhosts
 
 #### 脚手架
 
