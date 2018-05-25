@@ -26,3 +26,7 @@ https://www.rescuetime.com
 ## 软件管理
 ### chocolate(windows下的软件管理)
 
+
+## chrome插件
+
+Web Server for Chrome
