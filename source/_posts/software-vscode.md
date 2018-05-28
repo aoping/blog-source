@@ -6,6 +6,7 @@ categories:　software
 ---
 
 百度　 vscode 插件
+https://blog.csdn.net/asce1885/article/details/71075432
 
 ## 安装
 
